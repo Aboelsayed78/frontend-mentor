@@ -11,19 +11,21 @@
   <title>Frontend Mentor | QR code component</title>
 
   <style>
+    * {padding: 0;margin: 0;}
     .main {
       background-color: hsl(212, 45%, 89%);
-      width: 1440px;
-      margin: 100px auto;
-      padding: 50px;
-      box-shadow: 5px 10px 10px 0 #ddd;
+      height: 100vh;
+      position: relative;
     }
     .comp {
-      width: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 250px;
       background-color: white;
       padding: 15px;
       border-radius: 10px;
-      margin: 50px auto;
       box-shadow: 5px 10px 10px 0 #ddd;
     }
     img {
@@ -32,12 +34,13 @@
     }
     .content {
       text-align: center;
-      padding: 0 18px;
+      padding: 20px 10px;
     }
     h2 {
       font-family: "Outfit", sans-serif;
       font-weight: 700;
-      font-size: 22px;
+      font-size: 20px;
+      margin-bottom: 20px;
       color: hsl(218, 44%, 22%);
     }
     p {
