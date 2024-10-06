@@ -3,19 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <title>welcome page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <title>Welcome Page</title>
     <style>
+      * {margin: 0; padding: 0;}
       main {
-        margin: 20px auto;
-        background-color: #999;
-        border: 1px solid #555;
-        padding: 10px;
+        width: 60%;
+        margin: 50px auto;
+        background-color: navy;
+        border-radius: 5px;
+        padding: 40px 0;
         font-family: Arial, Helvetica, sans-serif;
       }
       h1 {
         text-align: center;
         text-transform: capitalize;
+        color: #eee;
+        margin-bottom: 40px;
       }
       .projects {
         display: flex;
@@ -26,20 +30,24 @@
         text-align: center;
         min-width: 200px;
         font-size: 20px;
-        color: #000;
+        color: navy;
         font-weight: bold;
         padding: 10px;
-        background-color: #1ff128;
+        border-radius: 5px;
+        background-color: #ddd;
+        transition: 0.2s;
       }
+      a:hover {background-color: #fff;}
     </style>
   </head>
   <body>
     <main>
-      <h1>my projects</h1>
+      <h1>my projects with frontend mentor</h1>
       <div class="projects">
         <a href="qr-code-component-main/index.html">QR Card</a>
         <a href="blog-preview-card-main/index.html">Blog Card</a>
         <a href="social-links-profile-main/index.html">Social Links</a>
+        <a href="recipe-page-main/index.html">Recipe Page</a>
       </div>
     </main>
   </body>
